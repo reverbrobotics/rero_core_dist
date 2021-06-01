@@ -18,7 +18,7 @@ To use ReroCore, simply extract the archive and run the executables with the pro
 ```
 
 ### Starting the Server
-For example, to launch the ReroCore server, from the extracted directory run:
+To launch the ReroCore server, from the extracted directory run:
 
 ```
 ./bin/rero_server ./conf/config.ini
