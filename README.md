@@ -72,7 +72,7 @@ path="./models/vosk-rpi-model/"
 model_path = "./models/nlu/nlu_engine_music/"
 ```
 
-The server parameters define the gRPC host, port, and PortAudio device index. 
+The server parameters define the gRPC host, port, and PortAudio device index. A device index of -1 signifies that the system should use the default device.
 
 The model parameters defines the path to the speech recognition model. An optional parameter vocab_path can be set to a file containing a file that defines the available vocabulary to be used for the speech recognition. This feature dramatically increases accuracy when a limited vocabulary is used.
 
