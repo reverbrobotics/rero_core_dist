@@ -2,6 +2,18 @@
 
 This repository contains the distributables for ReroCore. They can be downloaded in the releases section or from the links in the table below. 
 
+## Dependencies
+This distributable requires [PortAudio](http://files.portaudio.com/download.html) to be installed. You can download, compile, and install the latest version of portaudio by running the following commands.
+
+```
+wget http://files.portaudio.com/archives/pa_stable_v190700_20210406.tgz
+tar -zxvf pa_stable_v190700_20210406.tgz
+cd portaudio/
+./configure
+make
+sudo make install
+```
+
 ## Download
 Currently Ubuntu 18.04 or greater, and current versions of Raspbian are supported. 
 
