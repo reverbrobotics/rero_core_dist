@@ -28,6 +28,8 @@ Currently Ubuntu 18.04 or greater, and current versions of Raspbian are supporte
 | Ubuntu x86_64  | [Link](https://github.com/reverbrobotics/rero_core_dist/releases/download/v0.1.1/ReroCore-0.1.1_ubuntu_x86_64.tgz) |
 | Raspbian (Arm) | [Link](https://drive.google.com/file/d/1oyqQzprVs08Ty_W9pFCb_nKQGeIkkIfJ/view)                                                                                                                   |                                                                                            |
 
+A pre-built raspberry pi image is also available [here](https://drive.google.com/file/d/1JYbGrKC-MNqzVTV_mwpuhE2ufbwLCx7V/view?usp=sharing).
+
 ## Usage
 To use ReroCore, simply extract the archive and run the executables with the provided configuration file. Executables take the path to a config.ini file as their first agument, e.g.
 
