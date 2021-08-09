@@ -123,7 +123,7 @@ A custom NLU model can be created by following the steps outlined in this [githu
 [nlu]
 model_path = "/path/to/trained/model"
 ```
-*n.b. Models are also compatible across architectures, so it is usually faster/more convenient to first train the custom NLU model a x86 machine, and then copy the trained model onto arm-based systems such as the raspberry pi.*
+*n.b. Models are compatible across architectures, so it is usually faster/more convenient to first train the custom NLU model on a x86 machine, and then copy the trained model onto arm-based systems such as the raspberry pi for inference.*
 
 ## Licence
 The ReroCore distributables are licenced under the [MIT License](https://github.com/reverbrobotics/rero_core_dist/blob/master/LICENSE). 
