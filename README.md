@@ -108,7 +108,13 @@ path="./models/vosk-rpi-model/"
 vocab_path="./models/vocab.txt"
 ```
 
-where vocab_path points to a ```vocab.txt``` file containing the custom vocabulary.
+where vocab_path points to a ```vocab.txt``` file containing the custom vocabulary. If using the raspberry pi image, the system service must be restarted using 
+
+```
+sudo service rerocore restart
+```
+
+for the new vocabulary file to take effect. 
 
 
 ## Creating a custom NLU model
