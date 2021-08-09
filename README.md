@@ -118,7 +118,12 @@ for the new vocabulary file to take effect.
 
 
 ## Creating a custom NLU model
-TODO
+A custom NLU model can be created by following the steps outlined in this [github repo](https://github.com/snipsco/snips-nlu). Simply follow the instructions in the ***Command Line Interface*** section to train a new NLU model, and then configure the moddel by setting the nlu section of the config.ini to
+```
+[nlu]
+model_path = "/path/to/trained/model"
+```
+
 
 ## Licence
 The ReroCore distributables are licenced under the [MIT License](https://github.com/reverbrobotics/rero_core_dist/blob/master/LICENSE). 
