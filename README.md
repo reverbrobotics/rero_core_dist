@@ -25,8 +25,8 @@ Currently Ubuntu 18.04 or greater, and current versions of Raspbian are supporte
 
 | Platform       | Download Link                                                                                                          |
 |----------------|------------------------------------------------------------------------------------------------------------------------|
-| Ubuntu x86_64  | [Link](https://github.com/reverbrobotics/rero_core_dist/releases/download/v0.1.1/ReroCore-0.1.1_ubuntu_x86_64.tgz) |
-| Raspbian (Arm) | [Link](https://drive.google.com/file/d/1oyqQzprVs08Ty_W9pFCb_nKQGeIkkIfJ/view)                                                                                                                   |                                                                                            |
+| Ubuntu x86_64  | [Link](https://github.com/reverbrobotics/rero_core_dist/releases/download/v0.2.0/ReroCore-0.2.0_ubuntu_x86_64.tgz) |
+| Raspbian (Arm) | [Link](https://github.com/reverbrobotics/rero_core_dist/releases/download/v0.2.0/ReroCore-0.2.0-ARMv7.tgz)                                                                                                                   |                                                                                            |
 
 A pre-built raspberry pi image is also available [here](https://drive.google.com/file/d/1JYbGrKC-MNqzVTV_mwpuhE2ufbwLCx7V/view?usp=sharing).
 
