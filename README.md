@@ -132,5 +132,10 @@ The ReroCore distributables are licenced under the [GPL-2.0 License](https://git
 If you use this project in your research, please cite our conference paper that outlines the project.
 
 ```
-@article{grasse2021platform, title={An End-to-End Platform for Human-Robot Speech Interaction}, url={https://r00binson.wixsite.com/soundinhri/submissions}, journal={Sound in HRI Workshop. 16th Annual Conference for Basic and Applied Human-Robot Interaction.}, author={Grasse, Lukas S. and Tata, Matthew S.}}
+@article{grasse2021platform, 
+          title={An End-to-End Platform for Human-Robot Speech Interaction}, 
+          url={https://r00binson.wixsite.com/soundinhri/submissions}, 
+          journal={Sound in HRI Workshop. 16th Annual Conference for Basic and Applied Human-Robot Interaction.}, 
+          author={Grasse, Lukas S. and Tata, Matthew S.}
+}
 ```
