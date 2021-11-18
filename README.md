@@ -128,8 +128,8 @@ model_path = "/path/to/trained/model"
 ## Licence
 The ReroCore distributables are licenced under the [GPL-2.0 License](https://github.com/reverbrobotics/rero_core_dist/blob/master/LICENSE). 
 
-## Citation
-If you use this project in your research, please cite our conference paper that outlines the project.
+## Citations
+If you use this project in your research, please consider citing our conference paper that outlines the project.
 
 ```
 @article{grasse_tata_2021_platform, 
