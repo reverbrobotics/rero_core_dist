@@ -56,6 +56,8 @@ and speaking into your microphone. This will print the speech recognition result
 
 The speech recognition performance can make use of a custom vocabulary to improve accuracy for domain-specific recognition. Please see the "Defining a Custom Speech Recognition Vocabulary" section for more details.
 
+# FUCK
+
 ### Testing the Natural Language Understanding (NLU)
 You can test the NLU by running the following command:
 
