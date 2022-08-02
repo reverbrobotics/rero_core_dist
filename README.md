@@ -98,7 +98,7 @@ The model parameters defines the path to the speech recognition model. An option
 
 The nlu parameter defines a path to a natural language model. Please see the section on creating a custom NLU model for more information
 
-**IF THE SERVICE SECTION OF THE CONFIG FILE IS CHANGED, YOU MUST RESTART THE CORE SERVICE FOR THE CHANGES TO TAKE EFFECT**
+**IF THE CONFIG FILE IS CHANGED, YOU MUST RESTART THE CORE SERVICE FOR THE CHANGES TO TAKE EFFECT**
 
 ```
 sudo service rerocore restart
