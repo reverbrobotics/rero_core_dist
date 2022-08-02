@@ -148,7 +148,7 @@ model_path = "/path/to/trained/model"
 *n.b. Models are compatible across architectures, so it is usually faster/more convenient to first train the custom NLU model on a x86 machine, and then copy the trained model onto arm-based systems such as the raspberry pi for inference.*
 
 ## Modifying Core Modules
-Core modules (speech recognition, NLU, etc.) are written in C++ and can be modified if users want to. After changes are made, run the command ```catkin_make``` from the ```~/rero_ros_ws``` or ```~/catkin_ws``` directory depending the version the image you use. This will compile the code and link modules in ROS.
+Core modules (speech recognition, NLU, etc.) are written in C++ and can be modified if users want to. The source code can be found in ```~/rero_ros_ws/src/rero_ros/src``` or ```~/rero_ros_ws/src/rero_ros/src``` depending on your image. After changes are made, run the command ```catkin_make``` from the ```~/rero_ros_ws``` or ```~/catkin_ws``` directory depending the version the image you use. This will compile the code and link modules in ROS.
 
 ## Licence
 The ReroCore distributables are licenced under the [GPL-2.0 License](https://github.com/reverbrobotics/rero_core_dist/blob/master/LICENSE). Commercial licensing under a separate license is available on request.
