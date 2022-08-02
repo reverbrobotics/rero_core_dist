@@ -21,7 +21,7 @@ sudo make install
 ```
 
 ## Download
-Currently Ubuntu 18.04 or greater, and current versions of Raspbian are supported. 
+Currently Ubuntu 18.04 or greater, and current versions of Raspbian are supported. Credentials for the Ubuntu image are ```ubuntu:rero123.123```
 
 | Platform       | Download Link                                                                                                          |
 |----------------|------------------------------------------------------------------------------------------------------------------------|
@@ -97,6 +97,12 @@ The server parameters define the gRPC host, port, and PortAudio device index. A 
 The model parameters defines the path to the speech recognition model. An optional parameter vocab_path can be set to a file containing a file that defines the available vocabulary to be used for the speech recognition. This feature dramatically increases accuracy when a limited vocabulary is used.
 
 The nlu parameter defines a path to a natural language model. Please see the section on creating a custom NLU model for more information
+
+**IF THE CONFIG FILE IS CHANGED, YOU MUST RESTART THE CORE SERVICE FOR THE CHANGES TO TAKE EFFECT**
+
+```
+sudo service rerocore restart
+```
 
 ## Defining a Custom Speech Recognition Vocabulary
 The speech recognition accuracy can be easily improved by using a custom restricted vocabulary that only contains domain-specific words. To make use of this feature, simply create a vocabulary text file that contains each vocabulary entry on a new line, and then add the vocabulary file to the configuration.
