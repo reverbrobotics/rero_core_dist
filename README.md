@@ -21,7 +21,7 @@ sudo make install
 ```
 
 ## Download
-Currently Ubuntu 18.04 or greater, and current versions of Raspbian are supported. 
+Currently Ubuntu 18.04 or greater, and current versions of Raspbian are supported. Credentials for the Ubuntu image are ```ubuntu:rero123.123```
 
 | Platform       | Download Link                                                                                                          |
 |----------------|------------------------------------------------------------------------------------------------------------------------|
@@ -75,6 +75,20 @@ To listen to the raw audio coming from the microphones, run the command
 
 Headphones are recommended in order to prevent feedback/echoes.
 
+## ROS Usage
+
+The premade distribution is configured to allow for the use of ROS to launch the speech recognition and NLU modules. They can be run with commands
+
+```
+roslaunch rero_ros speech_recognition.launch
+
+roslaunch rero_ros nlu.launch
+```
+
+Adding an ```&``` to the end of these commands will allow the use of the CLI while still seeing the output from the ROS service. Alternatively, the use of screen can achieve a similar result.
+
+If a ROS service is launched with the ```&``` tag, it must be killed manually. ```ps -a``` will list all processes, and ```kill process_ID_number``` will kill the process.
+
 ## Configuration
 
 The default config.ini contains the following parameters
@@ -94,9 +108,17 @@ model_path = "./models/nlu/nlu_engine_music/"
 
 The server parameters define the gRPC host, port, and PortAudio device index. A device index of -1 signifies that the system should use the default device.
 
+To identify and select an audio input device, run the command ```python3 -m sounddevice```. This will return a list of audio devices and their indicies. Simply change the paDeviceIndex value to the desired index and restart the core server using ```sudo service rerocore restart```.
+
 The model parameters defines the path to the speech recognition model. An optional parameter vocab_path can be set to a file containing a file that defines the available vocabulary to be used for the speech recognition. This feature dramatically increases accuracy when a limited vocabulary is used.
 
 The nlu parameter defines a path to a natural language model. Please see the section on creating a custom NLU model for more information
+
+**IF THE CONFIG FILE IS CHANGED, YOU MUST RESTART THE CORE SERVICE FOR THE CHANGES TO TAKE EFFECT**
+
+```
+sudo service rerocore restart
+```
 
 ## Defining a Custom Speech Recognition Vocabulary
 The speech recognition accuracy can be easily improved by using a custom restricted vocabulary that only contains domain-specific words. To make use of this feature, simply create a vocabulary text file that contains each vocabulary entry on a new line, and then add the vocabulary file to the configuration.
@@ -124,6 +146,9 @@ A custom NLU model can be created by following the steps outlined in this [githu
 model_path = "/path/to/trained/model"
 ```
 *n.b. Models are compatible across architectures, so it is usually faster/more convenient to first train the custom NLU model on a x86 machine, and then copy the trained model onto arm-based systems such as the raspberry pi for inference.*
+
+## Modifying Core Modules
+Core modules (speech recognition, NLU, etc.) are written in C++ and can be modified if users want to. The source code can be found in ```~/rero_ros_ws/src/rero_ros/src``` or ```~/rero_ros_ws/src/rero_ros/src``` depending on your image. After changes are made, run the command ```catkin_make``` from the ```~/rero_ros_ws``` or ```~/catkin_ws``` directory depending the version the image you use. This will compile the code and link modules in ROS.
 
 ## Licence
 The ReroCore distributables are licenced under the [GPL-2.0 License](https://github.com/reverbrobotics/rero_core_dist/blob/master/LICENSE). Commercial licensing under a separate license is available on request.
