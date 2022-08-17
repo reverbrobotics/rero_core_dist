@@ -26,7 +26,7 @@ Currently Ubuntu 18.04 or greater, and current versions of Raspbian are supporte
 | Platform       | Download Link                                                                                                          |
 |----------------|------------------------------------------------------------------------------------------------------------------------|
 | Ubuntu x86_64  | [Link](https://drive.google.com/file/d/1OFso_Yd2j98sOgazcZQyldbA2Kf1zUrm/view?usp=sharing) |
-| Raspbian (Arm) | [Link](https://drive.google.com/file/d/1tPDe3ijZNglVmJ69kqTY9-QVEZodDpjA/view?usp=sharing)                                                                                                                   |                                                                                            |
+| Raspbian (Arm) | [Link](https://drive.google.com/file/d/13Am1mdgjgPOxdf06xAeI1qmn_I09bWv-/view?usp=sharing)                                                                                                                   |                                                                                            |
 
 A pre-built raspberry pi image is also available [here](https://drive.google.com/file/d/1u1ObydMGRtIR7VOfZv8cEWFiDOaKcc-t/view?usp=sharing). The login is ```pi:rero123.123```.
 
