@@ -28,7 +28,7 @@ Currently Ubuntu 18.04 or greater, and current versions of Raspbian are supporte
 | Ubuntu x86_64  | [Link](https://drive.google.com/file/d/1OFso_Yd2j98sOgazcZQyldbA2Kf1zUrm/view?usp=sharing) |
 | Raspbian (Arm) | [Link](https://drive.google.com/file/d/13Am1mdgjgPOxdf06xAeI1qmn_I09bWv-/view?usp=sharing)                                                                                                                   |                                                                                            |
 
-A pre-built raspberry pi image is also available [here](https://drive.google.com/file/d/1u1ObydMGRtIR7VOfZv8cEWFiDOaKcc-t/view?usp=sharing). The login is ```pi:rero123.123```.
+A pre-built raspberry pi image is also available [here](https://drive.google.com/file/d/1--NT_yFG88tsyixFaIE4Fi4HUB6_xo_D/view?usp=sharing). The login is ```ubuntu:rero123.123```.
 
 ## Usage
 To use ReroCore, simply extract the archive and run the executables with the provided configuration file. Executables take the path to a config.ini file as their first agument, e.g.
