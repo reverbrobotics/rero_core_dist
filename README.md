@@ -75,6 +75,14 @@ To listen to the raw audio coming from the microphones, run the command
 
 Headphones are recommended in order to prevent feedback/echoes.
 
+### Testing the Text-to-Speech
+
+To test the text-to-speech system, run the command
+```
+./bin/tts_cmdline ./conf/config.ini
+```
+
+
 ## ROS Usage
 
 The premade distribution is configured to allow for the use of ROS to launch the speech recognition and NLU modules. They can be run with commands
