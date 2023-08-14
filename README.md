@@ -6,6 +6,7 @@ This repository contains the distributables for ReroCore. They can be downloaded
 This distributable  requires Alsa and [PortAudio](http://files.portaudio.com/download.html) to be installed. First, install alsa and the alsa shared library using the following command
 ```
 sudo apt-get install libasound2-dev
+sudo apt-get install libsndfile-dev
 ```
 
 Next, you can download, compile, and install the latest version of portaudio by running the following commands.
